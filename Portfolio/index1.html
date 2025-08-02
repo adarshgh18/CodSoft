@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+    }
+
+    .skills li {
+      background: #eee;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .projects .project {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .projects img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .resume a {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Adarsh Gupta</h1>
+    <p>Web Developer | Creative Thinker | Problem Solver</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <center>
+      <img src="myphoto.jpg" alt="My Photo" />
+    </center>
+    <p>Hello! I'm Adarsh Gupta a passionate web developer with a love for building interactive and user-friendly websites. I am specialized in front-end development using HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Todo App</h3>
+      <img src="https://via.placeholder.com/700x300" alt="Todo App Screenshot" />
+      <p>A simple to-do list app built using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="project">
+      <h3>Basic Calculator</h3>
+      <img src="https://via.placeholder.com/700x300" alt="Calculator Screenshot" />
+      <p>A basic calculator built using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <img src="https://via.placeholder.com/700x300" alt="Portfolio Screenshot" />
+      <p>This personal portfolio website was built to showcase my projects and skills.</p>
+    </div>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <p>Download my resume in PDF format:</p>
+    <a href="https://drive.google.com/file/d/1gERQkTrty1srUutltloQ7bdW9fPie9Eg/view?usp=drivesdk" download>Download Resume</a>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: guptaadarsh368@gmail.com</p>
+    <p>Phone: +91-8528465892</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Adarsh Gupta. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
