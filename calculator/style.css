@@ -3,45 +3,102 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #222;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
 }
 
 .calculator {
-  background-color: #29a6ff;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
-.display {
-  width: 100%;
+#display {
+  width: 97%;
   height: 50px;
   font-size: 24px;
   text-align: right;
-  padding-right: 10px;
   margin-bottom: 15px;
-  border: none;
+  padding: 10px;
+  border: 2px solid #aaa;
   border-radius: 5px;
-  background-color: #e6f7ff;
+  background-color: #f2f2f2;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 60px);
-  grid-gap: 10px;
+  gap: 10px;
 }
 
 button {
   height: 60px;
-  font-size: 22px;
-  border: none;
-  border-radius: 10px;
-  background-color: #007acc;
-  color: white;
+  font-size: 20px;
   cursor: pointer;
-  transition: 0.2s;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.2s, transform 0.1s;
 }
 
-button:hover {
-  background-color: #005f99;
+/* Number buttons */
+button:nth-child(1),
+button:nth-child(2),
+button:nth-child(3),
+button:nth-child(5),
+button:nth-child(6),
+button:nth-child(7),
+button:nth-child(9),
+button:nth-child(10),
+button:nth-child(11),
+button:nth-child(13) {
+  background-color: #cce5ff;
 }
+
+button:nth-child(1):hover,
+button:nth-child(2):hover,
+button:nth-child(3):hover,
+button:nth-child(5):hover,
+button:nth-child(6):hover,
+button:nth-child(7):hover,
+button:nth-child(9):hover,
+button:nth-child(10):hover,
+button:nth-child(11):hover,
+button:nth-child(13):hover {
+  background-color: #99ccff;
+}
+
+/* Operator buttons */
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16) {
+  background-color: #ffcc80;
+}
+
+button:nth-child(4):hover,
+button:nth-child(8):hover,
+button:nth-child(12):hover,
+button:nth-child(16):hover {
+  background-color: #ffb74d;
+}
+
+/* Clear button */
+button:nth-child(14) {
+  background-color: #ff9999;
+}
+
+button:nth-child(14):hover {
+  background-color: #ff6666;
+}
+
+/* Equals button */
+button:nth-child(15) {
+  background-color: #b2f2bb;
+}
+
+button:nth-child(15):hover {
+  background-color: #8ce99a;
+}
+
